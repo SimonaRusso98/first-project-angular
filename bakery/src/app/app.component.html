@@ -1,0 +1,119 @@
+<!--Con ngIf l'elemento h2 viene rimosso direttamente dal dom-->
+<!--"se diaplay è vera visualizzala, altrimenti visualizza elseblock"-->
+<!--<h2 *ngIf="displayName; else elseBlock ">
+  Code Evolution
+</h2>
+
+<ng-template #elseBlock>
+  <h2>Name is Hidden</h2>
+</ng-template>
+-->
+
+<!--ALTRA SINTASSI NG IF
+  <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <h2>NAME</h2>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <h2>Other Name</h2>
+  </ng-template>
+
+
+  NG SWITCH
+  <div [ngSwitch]="color">
+      <div *ngSwitchCase="'red'">You picked red color</div>
+      <div *ngSwitchCase="'blue'">You picked blue color</div>
+      <div *ngSwitchCase="'green'">You picked green color</div>
+      <div *ngSwitchDefault>Pick again</div>
+  </div>
+
+
+  NF FOR, dichiariamo una variabile item che farà riferimento ad ogni elemento presente nell'array 
+  <div *ngFor="let item of colors; index as i">
+    <h2> {{i}} {{item}}</h2>
+
+  </div>
+
+
+  PIPES PER LE STRINGHE
+  lowercase
+  <h2>{{ name | lowercase}}</h2>
+
+  uppercase-->
+  <!--<h2>{{ name | uppercase}}</h2>
+  
+titlecase-->
+<!--<h2>{{ message | titlecase}}</h2>
+
+
+slice-->
+<!--<h2>{{ name | slice: 3:5}}</h2>
+
+Json Pipe, usato per gli oggetti-->
+<!--<h2>{{ person | json}}</h2>
+
+
+
+PIPES PER i NUMERI-->
+<!--<h2>{{5.678 | number: '1.2-3'}}</h2>
+<h2>{{5.678 | number: '3.4-5'}}</h2>
+<h2>{{5.678 | number: '3.1-2'}}</h2>
+
+<h2>{{0.25 | percent}}</h2>
+
+CURRENCY PIPE (PER I PREZZI)
+<h2>{{0.25 | currency }}</h2>
+<h2>{{0.25 | currency:'EUR' }}</h2>
+<h2>{{0.25 | currency:'EUR': 'code' }}</h2>
+
+DATE PIPE  (esistono anche i formati medium e long )
+<h2>{{date}}</h2>
+
+<h2>{{date | date: 'short'}}</h2>
+
+<h2>{{date | date: 'shortDate'}}</h2>
+
+<h2>{{date | date: 'shortTime'}}</h2>
+
+
+SERVICES (si fa con una specifica classe a parte)
+<h2>Employee List</h2>
+<ul *ngFor="let employee of employees">
+  <li>{{employee.name}}</li>
+</ul>
+
+<h2>Employe details</h2>
+<ul *ngFor ="let employee of employees">
+  <li>{{employee.id}}. {{employee.name}}, {{employee.age}}</li>
+</ul>
+
+<h3>{{errorMsg}}</h3>
+
+-->
+<!--
+<div style="text-align: center">
+<h1>
+  Routing and navigation
+</h1>
+</div>
+<nav>
+  <button>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+</button>
+<button>
+  <a routerLink="/employees" routerLinkActive="active">Employees</a>
+</button>
+</nav>
+-->
+
+
+<!--serve a far girare tutta l applicazione sulla stessa pagina-->
+
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <h1>Containers</h1>
+<router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
