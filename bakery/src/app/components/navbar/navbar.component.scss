@@ -1,15 +1,19 @@
 
+// ! le classi con il - ex: container-nav
+
 .containerNav{
     display: inline-flex;
     justify-content: flex-start;
     width:100vw;
     background-color:rgb(165, 47, 120,0.2);
     font-family: 'Open Sans', sans-serif;
- 
-   
-    color:rgb(165, 47, 120);
+    color:rgb(165, 47, 120); 
+}
 
-   
+.pointer {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 img{
@@ -24,13 +28,10 @@ h3{
 }
 
 
-.containerLink{
-   
-    display:inline-flex;
-   
-    margin-left: 140px;
+.container-links {
+    display: inline-flex;
     justify-content:flex-end;
-    justify-content: space-around;
+    align-items: center;
 
 }
 #links{

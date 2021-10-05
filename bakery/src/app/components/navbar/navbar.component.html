@@ -1,21 +1,34 @@
 
+  <!--INIZIO NAVBAR-->
+<!-- <div class='row'>
+  <div class='col-sm-12 col-md-12'>
+    <nav class="containerNav container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="assets\img\menu2.png" width="50" height="50" alt="">
+      </a>
+      <h3>Bakery</h3>
+      <div class="containerLink">
+        <a id="links" routerLink='/muffin' routerLinkActive="active">Muffin </a>
+        <a id="links" routerLink='/torte' routerLinkActive="active">Torte </a>
+        <a id="links" routerLink='/footer' routerLinkActive="active">Contatti </a>
 
-<div class='row'>   <!--INIZIO NAVBAR-->
-    <div class='col-sm-12 col-md-12'>
-        
-          <nav class="containerNav container-fluid ">
-            <a class="navbar-brand" href="#">
-              <img src="assets\img\menu2.png" width="50" height="50"  alt="">
-            </a>
-              <h3>Bakery</h3>
-              <div class="containerLink">
-              <a id="links" routerLink='/muffin' routerLinkActive="active">Muffin   </a>
-              <a id="links" routerLink='/torte' routerLinkActive="active">Torte   </a>
-              <a id="links" routerLink='/footer' routerLinkActive="active">Contatti   </a>
-       
-            </div>
-          </nav>
-          </div>
-          
+      </div>
+    </nav>
+  </div>
+</div> -->
 
-</div>
+<!-- ALTERNATIVE -->
+<nav class="row">
+  <div class="col-3 d-inline-flex">
+    <a class="navbar-brand" href="#">
+      <img src="assets\img\menu2.png" width="50" height="50" alt="">
+    </a>
+    <h3 class="pointer" (click)="goToHome()">Bakery</h3>
+  </div>
+  <div class="col-9 d-inline-flex justify-content-end align-items-center">
+    <a id="links" routerLink='/muffin' routerLinkActive="active">Muffin </a>
+    <a id="links" routerLink='/torte' routerLinkActive="active">Torte </a>
+    <!-- TODO click su contatti scroll verso il bottom -->
+    <a id="links" routerLink='/footer' routerLinkActive="active">Contatti </a>
+  </div>
+</nav>
